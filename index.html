@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1a1a1a;
+            --text-muted: #666666;
+            --accent-color: #2563eb;
+            --border-color: #e5e7eb;
+            --card-bg: #f9fafb;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0f172a;
+                --text-color: #f8fafc;
+                --text-muted: #94a3b8;
+                --accent-color: #3b82f6;
+                --border-color: #334155;
+                --card-bg: #1e293b;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .title {
+            color: var(--accent-color);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.25rem;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-title {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .project-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: var(--border-color);
+            color: var(--text-color);
+            font-size: 0.75rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+        }
+
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Your Name</h1>
+            <p class="title">Software Engineer / Designer / Creator</p>
+            <p>A short, punchy single-sentence bio goes here. Focus on what you build and what you're passionate about.</p>
+            <div class="links">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="mailto:your.email@example.com">Email</a>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Write a brief summary of your background, experience, and skills. Keep it to one or two readable paragraphs. Mention the core tools, languages, or frameworks you love using.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            
+            <div class="project-card">
+                <div class="project-title">
+                    <a href="https://github.com/project-one" target="_blank">Project Name One</a>
+                </div>
+                <p class="project-desc">A brief description of what this project does, who it is for, and the problem it solves.</p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">
+                    <a href="https://github.com/project-two" target="_blank">Project Name Two</a>
+                </div>
+                <p class="project-desc">A brief description of what this project does, who it is for, and the problem it solves.</p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Flask</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Your Name. Built with clean HTML & CSS.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
